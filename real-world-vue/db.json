@@ -71,6 +71,20 @@
           "name": "Mary Gordon"
         }
       ]
+    },
+    {
+      "id": 617248,
+      "category": "education",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Vue Tutoring",
+      "description": "Tutoring session for Vue.js",
+      "location": "ISAT/CS",
+      "date": "2019-10-02T15:42:00.000Z",
+      "time": "16:00",
+      "attendees": []
     }
   ]
 }
