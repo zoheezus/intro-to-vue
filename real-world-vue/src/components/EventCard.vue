@@ -1,10 +1,14 @@
-<template></template>
+<template>
+  <div>
+    <h4>{{ title }}</h4>
+  </div>
+</template>
 
 <script>
 export default {
   data() {
     return {
-      quote: 'hi'
+      title: 'Park Cleanup'
     }
   }
 }
