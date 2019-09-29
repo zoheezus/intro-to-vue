@@ -13,19 +13,8 @@
 
 <script>
 export default {
-  data() {
-    return {
-      event: {
-        id: 1,
-        title: 'Mosque Cleanup',
-        date: 'Tues October 22, 2019',
-        time: '7:00',
-        attendees: [
-          { id: 'abc123', name: 'Zohaib Afridi' },
-          { id: 'def456', name: 'Hosam Hadid' }
-        ]
-      }
-    }
+  props: {
+    event: Object
   }
 }
 </script>
