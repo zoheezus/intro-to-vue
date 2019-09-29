@@ -5,8 +5,19 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    user: { id: 'abc123', name: 'Adam Jahr' }
+    user: { id: 'abc123', name: 'Adam Jahr' },
+    events: [
+      { id: 1, title: '...', organizer: '...' },
+      { id: 2, title: '...', organizer: '...' },
+      { id: 3, title: '...', organizer: '...' },
+      { id: 4, title: '...', organizer: '...' }
+    ]
   },
   mutations: {},
-  actions: {}
+  actions: {},
+  getters: {
+    getEventById: state => id => {
+      return state.events.find(event => event.id === id)
+    }
+  }
 })
