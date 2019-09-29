@@ -26,8 +26,10 @@ export default {
     EventCard
   },
   created() {
+    this.perPage = 3
+
     this.$store.dispatch('fetchEvents', {
-      perPage: 3, // <-- How many items to display per page
+      perPage: this.perPage, // <-- How many items to display per page
       page: this.page // <-- What page we're on
     })
   },
@@ -36,7 +38,10 @@ export default {
       // What page we're currently on
       return parseInt(this.$route.query.page) || 1
     },
-    ...mapState(['events'])
+    hasNextPage() {
+      return this.eventsTotal > this.page * this.perPage
+    },
+    ...mapState(['events', 'eventsTotal'])
   }
 }
 </script>
