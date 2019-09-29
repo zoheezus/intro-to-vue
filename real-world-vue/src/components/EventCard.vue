@@ -1,9 +1,14 @@
 <template>
-  <div class="event-card -shadow">
-    <span class="eyebrow">@{{ event.time }} on {{ event.date }}</span>
-    <h4 class="title">{{ event.title }}</h4>
-    <span>@{{ event.attendees.length }} attending</span>
-  </div>
+  <router-link
+    class="event-link"
+    :to="{ name: 'event-show', params: { id: '1' } }"
+  >
+    <div class="event-card -shadow">
+      <span class="eyebrow">@{{ event.time }} on {{ event.date }}</span>
+      <h4 class="title">{{ event.title }}</h4>
+      <span>{{ event.attendees.length }} attending</span>
+    </div>
+  </router-link>
 </template>
 
 <script>
@@ -15,7 +20,7 @@ export default {
         title: 'Mosque Cleanup',
         date: 'Tues October 22, 2019',
         time: '7:00',
-        atendees: [
+        attendees: [
           { id: 'abc123', name: 'Zohaib Afridi' },
           { id: 'def456', name: 'Hosam Hadid' }
         ]
