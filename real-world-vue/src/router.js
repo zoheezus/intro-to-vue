@@ -6,7 +6,7 @@ import EventShow from './views/EventShow'
 import NProgress from 'nprogress'
 import store from '@/store/store'
 import NotFound from './views/NotFound.vue'
-import Network from './views/NetworkIssue.vue'
+import NetworkIssue from './views/NetworkIssue.vue'
 
 Vue.use(Router)
 
