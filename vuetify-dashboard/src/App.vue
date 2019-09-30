@@ -3,8 +3,8 @@
 		<v-app-bar app color="primary" dark>
 			<v-toolbar-title>Vuetify Dashboard</v-toolbar-title>
 			<v-spacer></v-spacer>
-			<v-btn text rounded>Home</v-btn>
-			<v-btn text rounded>Login</v-btn>
+			<v-btn text rounded to="/">Home</v-btn>
+			<v-btn text rounded to="/login">Login</v-btn>
 		</v-app-bar>
 		<v-content>
 			<router-view></router-view>
@@ -27,10 +27,16 @@ import HelloWorld from "./components/HelloWorld";
 export default {
 	name: "App",
 	data: () => ({
-    links: [
-      'Home',
-      'Login',
-    ]
+		links: [
+			{
+				label: "Home",
+				url: "/"
+			},
+			{
+				label: "Login",
+				url: "/login"
+			}
+		]
 	})
 };
 </script>
