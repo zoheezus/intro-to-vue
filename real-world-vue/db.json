@@ -183,6 +183,20 @@
       "date": "",
       "time": "",
       "attendees": []
+    },
+    {
+      "id": 76356,
+      "category": "housing",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "title": "House Auction",
+      "description": "A house on Main St is having an auction.",
+      "location": "Main St",
+      "date": "2019-11-09T03:17:00.000Z",
+      "time": "2:00",
+      "attendees": []
     }
   ]
 }

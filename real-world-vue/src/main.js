@@ -4,10 +4,6 @@ import router from './router'
 import store from './store/store'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
-import 'nprogress/nprogress.css'
-import Vuelidate from 'vuelidate'
-
-Vue.use(Vuelidate)
 
 Vue.config.productionTip = false
 
