@@ -7,7 +7,7 @@
 			<v-btn text rounded>Login</v-btn>
 		</v-app-bar>
 		<v-content>
-
+			<router-view></router-view>
 		</v-content>
 		<v-footer color="primary lighten-1" padless>
 			<v-row justify="center" no-gutters>
